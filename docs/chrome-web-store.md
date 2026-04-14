@@ -29,6 +29,10 @@ Prepare:
 - support URL
 - privacy policy URL
 
+Draft copy:
+
+- [store-listing.md](./store-listing.md)
+
 ## Suggested Product Positioning
 
 Recommended message:
@@ -63,6 +67,10 @@ The listing should explain why they exist:
 ## Reviewer Notes To Prepare
 
 The Chrome Web Store reviewer will likely benefit from explicit test instructions.
+
+Draft reviewer instructions:
+
+- [store-listing.md](./store-listing.md)
 
 Suggested structure:
 

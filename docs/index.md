@@ -16,6 +16,7 @@ The README is now intentionally short. Use this folder for the detail that does 
 - [publishing.md](./publishing.md): what is needed for a cleaner public release
 - [privacy-policy.md](./privacy-policy.md): privacy policy text for public distribution
 - [chrome-web-store.md](./chrome-web-store.md): store listing and reviewer prep
+- [store-listing.md](./store-listing.md): draft listing copy and reviewer instructions
 
 ## Planning
 

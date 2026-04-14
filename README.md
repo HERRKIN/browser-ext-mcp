@@ -116,6 +116,7 @@ Use the docs when you want detail beyond the quickstart.
 - [docs/troubleshooting.md](./docs/troubleshooting.md): common setup and runtime problems
 - [docs/privacy-policy.md](./docs/privacy-policy.md): privacy policy draft for public distribution
 - [docs/chrome-web-store.md](./docs/chrome-web-store.md): listing and submission prep for the Chrome Web Store
+- [docs/store-listing.md](./docs/store-listing.md): draft Chrome Web Store copy and reviewer instructions
 - [docs/features.md](./docs/features.md): capability matrix and current implementation status
 - [docs/security.md](./docs/security.md): threat model, current guardrails, and remaining hardening work
 - [docs/publishing.md](./docs/publishing.md): release checklist and public-release posture
