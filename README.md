@@ -24,6 +24,9 @@ The extension does not work by itself. It needs the local companion from this re
 Repo:
 - [github.com/HERRKIN/browser-ext-mcp](https://github.com/HERRKIN/browser-ext-mcp)
 
+License:
+- [MIT](./LICENSE)
+
 ## Quickstart
 
 ### 1. Install and build
@@ -109,6 +112,9 @@ Use the docs when you want detail beyond the quickstart.
 - [docs/index.md](./docs/index.md): documentation map and suggested reading order
 - [docs/examples.md](./docs/examples.md): concrete tasks, prompt examples, and model usage patterns
 - [docs/llm-install.md](./docs/llm-install.md): MCP setup for `codex`, `claude`, `gemini`, `opencode`, and similar clients
+- [docs/troubleshooting.md](./docs/troubleshooting.md): common setup and runtime problems
+- [docs/privacy-policy.md](./docs/privacy-policy.md): privacy policy draft for public distribution
+- [docs/chrome-web-store.md](./docs/chrome-web-store.md): listing and submission prep for the Chrome Web Store
 - [docs/features.md](./docs/features.md): capability matrix and current implementation status
 - [docs/security.md](./docs/security.md): threat model, current guardrails, and remaining hardening work
 - [docs/publishing.md](./docs/publishing.md): release checklist and public-release posture

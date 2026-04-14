@@ -2,6 +2,7 @@
   "name": "browser-ext-mcp",
   "private": true,
   "version": "0.1.0",
+  "license": "MIT",
   "description": "Chrome extension plus MCP bridge for controlling the user's real browser.",
   "workspaces": [
     "bridge"

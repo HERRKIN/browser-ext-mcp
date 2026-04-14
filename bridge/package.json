@@ -2,6 +2,7 @@
   "name": "@browser-ext-mcp/bridge",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "type": "module",
   "description": "Local MCP bridge for the browser extension.",
   "main": "dist/server.js",

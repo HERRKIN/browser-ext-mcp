@@ -7,12 +7,15 @@ The README is now intentionally short. Use this folder for the detail that does 
 - [README.md](../README.md): product overview, quickstart, and current limits
 - [examples.md](./examples.md): practical tasks, prompt examples, and recommended tool flows
 - [llm-install.md](./llm-install.md): how to register the local companion in supported MCP clients
+- [troubleshooting.md](./troubleshooting.md): setup and runtime fixes for the most common issues
 
 ## Product And Release
 
 - [features.md](./features.md): implemented, partial, and planned capabilities
 - [security.md](./security.md): current local-first security model and remaining hardening work
 - [publishing.md](./publishing.md): what is needed for a cleaner public release
+- [privacy-policy.md](./privacy-policy.md): privacy policy text for public distribution
+- [chrome-web-store.md](./chrome-web-store.md): store listing and reviewer prep
 
 ## Planning
 

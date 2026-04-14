@@ -35,7 +35,6 @@ The current goal should be the first threshold, not the second one. That keeps t
 
 Blocking or near-blocking items for a more formal public release:
 
-- choose a license
 - settle on the final release narrative and naming
 - document multi-client MCP installation
 - document the threat model and troubleshooting more thoroughly
@@ -66,6 +65,7 @@ These should be documented clearly in the public release, even if they are not a
 
 - make `README.md` the landing page
 - link `features`, `roadmap`, `security`, and `llm-install`
+- add `troubleshooting`, `privacy-policy`, and Chrome Web Store prep docs
 - add screenshots or GIFs for the side panel and workspaces
 - state clearly what is already usable and what is still pending
 
@@ -79,7 +79,6 @@ These should be documented clearly in the public release, even if they are not a
 
 ### Phase 3. Distribution Order
 
-- define the license
 - decide whether the bridge is also published to npm or only distributed via the repo
 - document versioning for both the bridge and the extension
 - prepare an initial changelog and first public tag
