@@ -11,6 +11,8 @@ build/
 coverage/
 .turbo/
 .cache/
+test-results/
+playwright-report/
 
 # Extension artifacts
 *.crx
@@ -20,3 +22,4 @@ coverage/
 .env
 .env.*
 .DS_Store
+.human-navigation.local.md

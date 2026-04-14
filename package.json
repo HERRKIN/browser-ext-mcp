@@ -1,0 +1,25 @@
+{
+  "name": "browser-ext-mcp",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Chrome extension plus MCP bridge for controlling the user's real browser.",
+  "workspaces": [
+    "bridge"
+  ],
+  "devDependencies": {
+    "@playwright/test": "^1.55.0"
+  },
+  "scripts": {
+    "build": "npm run build --workspace bridge",
+    "dev:bridge": "npm run dev --workspace bridge",
+    "mcp:install": "node scripts/install-mcp-clients.js",
+    "mcp:tools": "node scripts/mcp-bridge.js tools",
+    "mcp:call": "node scripts/mcp-bridge.js call",
+    "test": "npm run test --workspace bridge",
+    "test:e2e": "playwright test",
+    "typecheck": "npm run typecheck --workspace bridge"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

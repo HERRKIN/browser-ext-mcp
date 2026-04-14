@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browser Ext MCP</title>
+    <link rel="stylesheet" href="./sidepanel.css" />
+  </head>
+  <body>
+    <main class="panel">
+      <header class="hero">
+        <div class="hero-signal" aria-hidden="true">
+          <span class="hero-signal-core"></span>
+          <span class="hero-signal-ring"></span>
+          <span class="hero-signal-ring hero-signal-ring-delayed"></span>
+        </div>
+        <p class="eyebrow">Browser Control</p>
+        <h1>Browser Ext MCP</h1>
+        <p class="copy">
+          Control your real Chrome session with MCP tools, site-scoped permissions, and a side
+          panel that stays next to the page you are working on.
+        </p>
+      </header>
+
+      <section class="surface repo-surface">
+        <p class="label">Companion setup</p>
+        <p class="value repo-copy">
+          This extension needs the local MCP companion. Install the rest from the GitHub repo.
+        </p>
+        <a
+          id="repo-link"
+          class="repo-link"
+          href="https://github.com/HERRKIN/browser-ext-mcp"
+          target="_blank"
+          rel="noreferrer"
+          >Open installation guide on GitHub</a
+        >
+      </section>
+
+      <section class="status-card">
+        <div>
+          <p class="label">Connection</p>
+          <p id="relay-status" class="value">Checking…</p>
+        </div>
+        <button id="refresh-status" class="button" type="button">Refresh</button>
+      </section>
+
+      <section class="status-card">
+        <div>
+          <p class="label">Current page</p>
+          <p id="active-tab" class="value">Unknown</p>
+        </div>
+      </section>
+
+      <section class="surface">
+        <div class="workspace-header">
+          <div>
+            <p class="label">Agent session</p>
+            <p id="active-workspace" class="value">No active agent session</p>
+            <p id="session-copy" class="compact-copy">Agent tabs stay separate from your personal browsing.</p>
+          </div>
+          <div class="header-actions">
+            <button id="create-workspace" class="button" type="button">Prepare session</button>
+            <button id="focus-workspace" class="ghost-button" type="button" disabled>Focus all</button>
+            <button id="close-workspace" class="ghost-button" type="button" disabled>Close session</button>
+          </div>
+        </div>
+        <p class="label">Agent tabs</p>
+        <ul id="workspace-list" class="tool-list"></ul>
+      </section>
+
+      <section class="surface">
+        <p class="label">Pending approvals</p>
+        <p id="approval-state" class="value compact-copy">No pending approvals</p>
+        <ul id="approval-list" class="tool-list"></ul>
+      </section>
+
+      <details class="surface advanced-surface">
+        <summary class="advanced-summary">Advanced</summary>
+        <div class="advanced-grid">
+          <div>
+            <p class="label">Relay port</p>
+            <div class="workspace-controls">
+              <input id="relay-port" class="input" type="number" min="1" max="65535" placeholder="17373" />
+              <button id="save-relay-port" class="button" type="button">Save</button>
+            </div>
+          </div>
+
+          <div>
+            <p class="label">Site policy</p>
+            <div class="workspace-controls">
+              <input id="site-hostname" class="input" type="text" placeholder="Hostname" readonly />
+              <select id="site-policy" class="input">
+                <option value="allow">Allow</option>
+                <option value="ask">Ask before acting</option>
+                <option value="block">Block actions</option>
+              </select>
+              <button id="save-site-policy" class="button" type="button">Save</button>
+            </div>
+          </div>
+        </div>
+      </details>
+    </main>
+
+    <div id="approval-modal" class="approval-modal hidden" aria-hidden="true">
+      <div class="approval-modal-card" role="dialog" aria-modal="true" aria-labelledby="approval-modal-title">
+        <p class="label">Approval required</p>
+        <h2 id="approval-modal-title">Sensitive action pending</h2>
+        <p id="approval-modal-summary" class="value">This action needs your confirmation.</p>
+        <div class="approval-meta">
+          <div>
+            <p class="label">Site</p>
+            <p id="approval-modal-hostname" class="value">Unknown</p>
+          </div>
+          <div>
+            <p class="label">Tool</p>
+            <p id="approval-modal-tool" class="value">Unknown</p>
+          </div>
+        </div>
+        <div>
+          <p class="label">Input</p>
+          <pre id="approval-modal-input" class="approval-code">{}</pre>
+        </div>
+        <div class="approval-actions">
+          <button id="approval-approve-once" class="button" type="button">Approve once</button>
+          <button id="approval-allow-site" class="ghost-button" type="button">Always allow this site</button>
+          <button id="approval-deny" class="ghost-button" type="button">Deny</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./sidepanel.js"></script>
+  </body>
+</html>

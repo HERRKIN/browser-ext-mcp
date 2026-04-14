@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browser Ext MCP</title>
+    <link rel="stylesheet" href="./popup.css" />
+  </head>
+  <body>
+    <main class="popup">
+      <p class="eyebrow">Browser Control</p>
+      <h1>Browser Ext MCP</h1>
+      <p class="copy">
+        Open the control center for your real Chrome session. If the side panel is not available,
+        use the tab fallback.
+      </p>
+      <div class="actions">
+        <button id="open-tab" class="button" type="button">Open Control Center</button>
+      </div>
+      <p id="status" class="status">Ready.</p>
+    </main>
+    <script type="module" src="./popup.js"></script>
+  </body>
+</html>
