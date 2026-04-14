@@ -16,6 +16,7 @@ The current goal should be the first threshold, not the second one. That keeps t
 - local MCP bridge over `stdio`
 - local relay with pairing and autodiscovery
 - MV3 extension with side panel
+- intentionally small runtime dependency surface in the core bridge, which helps auditability and reduces supply-chain risk
 - workspace/tab-group isolation for agent tabs
 - structured page reading, accessibility, interaction, and screenshots
 - real observability: console, network, errors, performance, DOM/CSS inspection

@@ -88,6 +88,7 @@ npm run bridge:start --workspace bridge
 This repo is already usable for local technical users.
 
 - bridge tests and e2e coverage are green
+- the runtime stays intentionally small: the core bridge depends on only two external runtime libraries, which helps reduce supply-chain risk
 - real-page interaction, screenshots, DOM/CSS inspection, logs, network capture, and responsive analysis are working
 - the extension now presents the browser state as an agent session instead of exposing more infrastructure than necessary
 
